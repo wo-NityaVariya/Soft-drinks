@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact-us</title>
+
+     <!-- slick slider -->
+     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+     <!-- slick slider -->
+ 
+     <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+         crossorigin="anonymous" referrerpolicy="no-referrer" />
+ 
+ 
+     <!-- main css -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <link rel="stylesheet" href="./assets/css/media.css">
+     <link rel="stylesheet" href="./assets/css/same.css">
+ 
+</head>
+<body>
+    <main>
+        <!-- header -->
+          <div id="header"></div>
+        <!-- header -->
+
+
+
+    <main>
+
+        <div class="bradcrumb">
+            <div class="container">
+                <div class="bradcrumb_inner">
+                    <p><a href="./index.html">Home </a> / <span>Contact us</span> </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- form part -->
+        <section class="same_section contact_part">
+            <div class="container">
+                <div class="row_contact">
+                    <div class="contact_col">
+                        <div class="contact_image">
+                            <img src="./assets/image/about_animation-1.jpg" alt="">
+                        </div>
+                    </div>  
+                        <div class="contact_col">
+                            <form action="">
+                                <div class="input_wrap_grid">
+                                    <div class="input_warp">
+                                        <label for="input_title" class="input_label">Name</label>
+                                        <input type="text" class="input_contact" placeholder="enter text" required>
+                                        <span class="err">required*</span>
+                                    </div>
+                                    <div class="input_warp">
+                                        <label for="input_title" class="input_label">Last name</label>
+                                        <input type="text" class="input_contact" placeholder="enter text" required>
+                                        <span class="err">required*</span>
+                                    </div>
+                                    <div class="input_warp">
+                                        <label for="input_title" class="input_label">Email</label>
+                                        <input type="email" class="input_contact" placeholder="enter text" required>
+                                        <span class="err">Please enter valid Email</span>
+                                    </div>
+                                    <div class="input_warp">
+                                        <label for="input_title" class="input_label">phone number</label>
+                                        <input 
+                                        type="number" 
+                                        class="input_contact" 
+                                        placeholder="Enter number" 
+                                        required 
+                                        pattern="\d{10,}" 
+                                        />
+                                        <span class="err">Please enter at least 10 digits</span>
+                                    </div>
+                                    <div class="input_warp larg_part">
+                                        <label for="input_title" class="input_label">massage</label>
+                                        <textarea name="" id="" rows="8" placeholder="enter text" required ></textarea>
+                                        <span class="err">required*</span>
+                                    </div>
+                                </div>
+                                <input type="submit" value="submit" class="main-btn">
+                            </form>
+                        </div>
+
+                </div>      
+            </div>
+        </section>
+        <!-- form part -->
+
+        <!-- footer -->
+         <div id="footer"></div>
+        <!-- footer -->
+    </main>
+
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- slick slider -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- slick slider -->
+    
+        <!-- gsap cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="
+            https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+            "></script>
+    
+        <!-- gsap cdn -->
+    
+        <!-- smooth scroll -->
+        <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    
+        <!-- main js -->
+        <script src="./assets/js/main.js"></script>
+    
+        <script>
+            const splitText = new SplitType('.text_warp span', {
+                types: 'words',
+                tagName: 'div',
+            });
+        </script>
+</body>
+</html>

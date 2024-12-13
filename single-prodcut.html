@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single-product</title>
+
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- slick slider -->
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <!-- main css -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/media.css">
+    <link rel="stylesheet" href="./assets/css/same.css">
+
+</head>
+
+<body>
+    <main>
+        <!-- header -->
+        <div id="header"></div>
+        <!-- header -->
+
+        <!-- product section -->
+        <section class="product_warp">
+            <div class="container">
+                <div class="single_product_part">
+                    <div class="left_slider_part">
+                        <div class="single-product">
+                            <div><img src="./assets/image/product_1.png" alt=""></div>
+                            <div><img src="./assets/image/product_2.png" alt=""></div>
+                            <div><img src="./assets/image/product-3.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="right_text_part">
+                        <div class="text_wrap">
+                            <h5 class="product_title">Non-Alc Lemon Iced Tea</h5>
+                            <p class="product_para">
+                                This breakthrough blend combines Tenzo Organic Matcha and Maddie's Natural Sweetener™ to
+                                deliver a crave-worthy taste that’ll energize your being.</p>
+                            <ul class="product_benefit">
+                                <li>Unmatched Tenzo Matcha Quality & Freshness</li>
+                                <li>The Perfect, Plant-Based Sweetener for Tenzo
+                                </li>
+                                <li>Natural Antioxidants and Immune-Boosting
+                                </li>
+                                <li>30 Servings & Convenient Scooper Included
+                                </li>
+                                <li>So Delicious, You Won’t Believe It’s Healthy!
+                                </li>
+                            </ul>
+                            <div class="price">
+                                <div class="price_product"><span>$200</span><span>One-Time Purchase</span></div>
+                                <div class="price_product"><span>$300</span><span>Subscribe</span></div>
+                            </div>
+                            <div class="btn_cart">
+                                <a href="#" class="main-btn">Add to cart</a>
+                                <div class="quanity">
+                                    <div class="minus incrase">-</div>
+                                    <div class="number">1</div>
+                                    <div class="plus incrase">+</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg_part">
+                <div class="left_part">
+                    <!-- <video src="./assets/image/izze-fizz.mp4" autoplay loop muted></video> -->
+                </div>
+                <div class="right_part"></div>
+            </div>
+        </section>
+        <!-- product section -->
+
+        <main>
+            <!-- footer -->
+            <div id="footer"></div>
+            <!-- footer -->
+        </main>
+
+
+
+        <!-- jquery cdn -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+        <!-- slick slider -->
+        <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-- slick slider -->
+
+        <!-- gsap cdn  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+            integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+            integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="
+            https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js
+            "></script>
+
+        <!-- gsap cdn -->
+
+        <!-- smooth scroll -->
+        <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+        <!-- main js -->
+        <script src="./assets/js/main.js"></script>
+
+
+        <script>
+            const minusButton = document.querySelector('.minus');
+            const plusButton = document.querySelector('.plus');
+            const numberDisplay = document.querySelector('.number');
+
+            
+            minusButton.addEventListener('click', function() {
+                let currentValue = parseInt(numberDisplay.textContent);
+                if (currentValue > 1) {
+                numberDisplay.textContent = currentValue - 1;
+                }
+            });
+
+            plusButton.addEventListener('click', function() {
+                let currentValue = parseInt(numberDisplay.textContent);
+                numberDisplay.textContent = currentValue + 1;
+            });
+
+            jQuery('.single-product').slick({
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                arrows: false,
+                fade: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        </script>
+
+</body>
+
+</html>
