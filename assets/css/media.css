@@ -1,0 +1,116 @@
+@media screen and (max-width:1199px){
+    /* .row_contact .contact_col .input_wrap_grid{
+        grid-template-columns:repeat(auto-fit, minmax(198px, 1fr))
+    } */
+    .contact_col .contact_image img{
+        border-radius: 30px;
+    }
+}
+@media screen and (max-width:991px){
+    header .humburger .menu.activemenu{
+        height: 480px;
+        width: 500px;
+    }
+    header .humburger .menu ul li{
+        font-size: 30px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+    header .humburger .menu ul{
+        height: auto;
+        padding-top: 50px;
+        gap: 10px;
+    }
+}
+@media screen and (max-width:768px) {
+    .bradcrumb{
+        padding: 100px 0;
+    }
+    .product_warp{
+        padding:0 0 70px 0;
+    }
+    .product_warp .product_wrap{
+        grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));
+        row-gap: 100px;
+    }
+    .product_warp .product_image img{
+        width: 165px;
+    }
+    .product_warp .product_wrap .product_box::after{
+        height: 360px;
+    }
+    .product_warp .product_wrap .product_box::before{
+        height: 100px;
+        bottom: -100px;
+    }
+}
+
+@media (max-width:575px){
+    .footer .footer_inner .footer_row{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .footer .footer_inner .footer_row .footer_col:nth-child(3){
+        width: 100%;
+        justify-content: start;
+    }
+    .footer .footer_inner .footer_row .footer_col:nth-child(1), .footer .footer_inner .footer_row .footer_col:nth-child(2){
+        width: 100%;
+    }
+    
+    .footer .footer_logo span{
+        display: none;
+    }
+    .product_warp .product_wrap .product_box::before{
+        height: 110px;
+        bottom: -110px;
+    }
+    header .humburger .menu{
+        position: fixed;
+        top: 0;
+        height: 0%;
+        width: 100%;
+       left: 0;
+       right: 0;
+       top: 0px;
+       background-image: none;
+       background-color: #fff;
+       border-radius: 0px;
+
+    }
+    header .humburger .menu.activemenu{
+        height: 100%;
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px) {
+    header .logo img{
+        width: 70%;
+    }
+}
+@media (max-width:400px){
+    .product_warp .product_image img{
+        width: 150px;
+    }
+    .product_warp .product_image::after{
+        height: 200px;
+        width: 200px;
+    }
+    .product_warp .product_wrap .product_box::after{
+        height: 330px;
+    }
+    .product_warp .product_wrap{
+        grid-template-columns:repeat(auto-fit, minmax(270px, 1fr))
+    }
+    .product_warp .product_bio .product_name{
+        font-size: 16px;
+    }
+    .product_warp .product_wrap .product_box::before{
+        height: 80px;
+        bottom: -80px;
+        object-fit: contain;
+    }
+    .product_warp .product_wrap{
+        row-gap: 100px;
+    }
+}
